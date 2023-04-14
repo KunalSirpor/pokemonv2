@@ -102,7 +102,7 @@ const Details = () => {
               </div>
               <div>
                 <div className={styles.image}>
-                  <img src={data.pokemon.image} />
+                  <img src={data.pokemon.image} alt={data.pokemon.name} />
                 </div>
                 <div
                   style={{

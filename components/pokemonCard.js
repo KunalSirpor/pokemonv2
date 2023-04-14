@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import styles from "../styles/Pokemons.module.css";
-import Modal from "react-modal";
 import { gql, useQuery } from "@apollo/client";
-import Image from "next/image";
 import Link from "next/link";
 import client from "../client";
 import { toast } from "react-hot-toast";
@@ -60,44 +58,6 @@ const PokemonCard = ({ id, number, name, image, types }) => {
               ))}
             </div>
           </div>
-          {/* </Link> */}
-          {/* <button className={styles.pokemonCardEvol} onClick={handleModalClick}>
-            Evolution
-          </button>
-          <Modal
-            isOpen={evolution === null ? false : true}
-            onRequestClose={handleModalClose}
-            contentLabel="Evolution Modal"
-            className={styles.modalContent}
-            overlayClassName={styles.modalOverlay}
-          >
-            <h2>Evolution Details</h2>
-            <div style={{ display: "flex" }}>
-              <div className={styles.evolImg}>
-                <div>
-                  <img src={image} alt={name} height={300} width={300} />
-                  <h3>{name}</h3>
-                </div>
-              </div>
-              {evolution && (
-                <div style={{ display: "flex" }}>
-                  {evolution.pokemon.evolutions.map((evolution) => (
-                    <div className={styles.evolImg} key={evolution.number}>
-                      <div>
-                        <img
-                          src={evolution.image}
-                          alt={evolution.name}
-                          height={300}
-                          width={300}
-                        />
-                        <h3>{evolution.name}</h3>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </Modal> */}
         </div>
       </Link>
     </div>
