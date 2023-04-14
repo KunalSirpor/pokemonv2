@@ -1,0 +1,24 @@
+{
+  "name": "pokev2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.11",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-modal": "^3.16.1",
+    "react-paginate": "^8.1.5"
+  },
+  "devDependencies": {
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0"
+  }
+}

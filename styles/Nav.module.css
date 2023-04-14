@@ -1,0 +1,28 @@
+.nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 0;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 20px;
+}
+
+.nav p {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
